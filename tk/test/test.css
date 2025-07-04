@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px; /* Base font size */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row; /* Keep links in a row for both mobile and desktop */
+    justify-content: center; /* Center the links */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+nav a {
+    color: rgb(65, 255, 48);
+    margin: 5px 10px; /* Add horizontal spacing between links */
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on mobile */
+    padding: 10px; /* Reduce padding for smaller screens */
+}
+
+.intro, .content {
+    margin: 0; /* Remove margins */
+    padding: 10px; /* Add padding for spacing */
+}
+
+aside {
+    padding: 10px;
+    margin-top: 10px; /* Add margin for spacing */
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row; /* Use row layout for larger screens */
+    }
+
+    .intro {
+        flex: 1; /* Allow intro to take up space */
+        margin-right: 20px; /* Add margin for larger screens */
+    }
+
+    .content {
+        flex: 2; /* Allow content to take up more space */
+    }
+
+    aside {
+        width: 200px; /* Fixed width for aside on larger screens */
+        margin-top: 0; /* Remove top margin on larger screens */
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+a {
+    color: rgb(65, 255, 48);
+    text-decoration: none;
+}
+
+.sp{
+    color: rgb(65, 255, 48);
+}
